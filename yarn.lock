@@ -404,9 +404,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"TrustlessUtils@workspace:.":
+"@trustlessfi/utils@workspace:.":
   version: 0.0.0-use.local
-  resolution: "TrustlessUtils@workspace:."
+  resolution: "@trustlessfi/utils@workspace:."
   dependencies:
     ethers: ^5.4.7
   languageName: unknown
