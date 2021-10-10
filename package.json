@@ -1,12 +1,12 @@
 {
   "name": "TrustlessUtils",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Utils common in Trustless Typescript repositories.",
   "main": "TrustlessUtils.ts",
   "repository": "https://github.com/TrustlessFi/TrustlessUtils",
   "author": "TrustlessFi <TrustlessFi@protonmail.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "ethers": "^5.4.7"
   }
