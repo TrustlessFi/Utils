@@ -8,3 +8,6 @@
 !.yarn/sdks
 !.yarn/versions
 /node_modules
+
+
+*.swp
