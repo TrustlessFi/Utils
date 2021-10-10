@@ -6,7 +6,6 @@
   "repository": "https://github.com/TrustlessFi/TrustlessUtils",
   "author": "TrustlessFi <TrustlessFi@protonmail.com>",
   "license": "MIT",
-  "private": false,
   "dependencies": {
     "ethers": "^5.4.7"
   }
