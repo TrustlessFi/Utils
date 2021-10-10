@@ -1,8 +1,8 @@
 {
-  "name": "TrustlessUtils",
+  "name": "@trustless/utils",
   "version": "0.1.0",
   "description": "Utils common in Trustless Typescript repositories.",
-  "main": "TrustlessUtils.ts",
+  "main": "index.ts",
   "repository": "https://github.com/TrustlessFi/TrustlessUtils",
   "author": "TrustlessFi <TrustlessFi@protonmail.com>",
   "license": "MIT",
