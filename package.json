@@ -1,6 +1,6 @@
 {
   "name": "@trustlessfi/utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Utils common in Trustless typescript repositories.",
   "main": "index.ts",
   "repository": "https://github.com/TrustlessFi/Utils",
