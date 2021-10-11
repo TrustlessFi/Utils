@@ -1,4 +1,4 @@
-# yarn 
+# yarn
 
 .pnp.*
 .yarn/*
@@ -11,3 +11,5 @@
 
 
 *.swp
+
+/dist

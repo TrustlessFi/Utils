@@ -1,12 +1,16 @@
 {
   "name": "@trustlessfi/utils",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Utils common in Trustless typescript repositories.",
-  "main": "index.ts",
   "repository": "https://github.com/TrustlessFi/Utils",
   "author": "TrustlessOfficial <TrustlessFi@protonmail.com>",
   "license": "MIT",
   "dependencies": {
     "ethers": "^5.4.7"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.4.3"
   }
 }
