@@ -1,6 +1,6 @@
 {
   "name": "@trustlessfi/utils",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Utils common in Trustless typescript repositories.",
   "repository": "https://github.com/TrustlessFi/Utils",
   "author": "TrustlessOfficial <TrustlessFi@protonmail.com>",
