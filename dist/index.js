@@ -2,28 +2,33 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.unscale = exports.assertUnreachable = exports.last = exports.first = exports.firstOrNull = exports.enforce = void 0;
 // =================== GENERAL UTILS =====================
-exports.enforce = function (conditional, errorMessage) {
+var enforce = function (conditional, errorMessage) {
     if (!conditional)
         throw new Error(errorMessage);
 };
+exports.enforce = enforce;
 /// ================== FIRST / LAST IN LIST ======================
-exports.firstOrNull = function (array) {
+var firstOrNull = function (array) {
     if (array.length === 0)
         return null;
     return array[0];
 };
-exports.first = function (array) {
-    exports.enforce(array.length > 0, 'First for empty array');
+exports.firstOrNull = firstOrNull;
+var first = function (array) {
+    (0, exports.enforce)(array.length > 0, 'First for empty array');
     return array[0];
 };
-exports.last = function (array) {
-    exports.enforce(array.length > 0, 'Last for empty array');
+exports.first = first;
+var last = function (array) {
+    (0, exports.enforce)(array.length > 0, 'Last for empty array');
     return array[array.length - 1];
 };
+exports.last = last;
 // type PromiseType = PromiseType<typeof promisedOne> // => number
-exports.assertUnreachable = function (_x) { throw new Error('Didn\'t expect to get here'); };
+var assertUnreachable = function (_x) { throw new Error('Didn\'t expect to get here'); };
+exports.assertUnreachable = assertUnreachable;
 // ===================== MATH ===========================
-exports.unscale = function (quantity, decimals) {
+var unscale = function (quantity, decimals) {
     if (decimals === void 0) { decimals = 18; }
     var digits = quantity.toString().length;
     var digitsToRemove = digits - 15;
@@ -46,3 +51,4 @@ exports.unscale = function (quantity, decimals) {
     var result = num / (Math.pow(10, decimals));
     return result;
 };
+exports.unscale = unscale;
