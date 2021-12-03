@@ -25,6 +25,8 @@ export const last = <T>(array: Array<T>): T => {
 export type PromiseType<T> = T extends PromiseLike<infer U> ? U : T
 // type PromiseType = PromiseType<typeof promisedOne> // => number
 
+export const assertUnreachable = (_x: never): never => { throw new Error('Didn\'t expect to get here') }
+
 // ===================== MATH ===========================
 export const unscale = (quantity: BigNumber, decimals = 18): number => {
   const digits = quantity.toString().length

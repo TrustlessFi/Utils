@@ -1,25 +1,29 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.unscale = exports.assertUnreachable = exports.last = exports.first = exports.firstOrNull = exports.enforce = void 0;
 // =================== GENERAL UTILS =====================
-export var enforce = function (conditional, errorMessage) {
+exports.enforce = function (conditional, errorMessage) {
     if (!conditional)
         throw new Error(errorMessage);
 };
 /// ================== FIRST / LAST IN LIST ======================
-export var firstOrNull = function (array) {
+exports.firstOrNull = function (array) {
     if (array.length === 0)
         return null;
     return array[0];
 };
-export var first = function (array) {
-    enforce(array.length > 0, 'First for empty array');
+exports.first = function (array) {
+    exports.enforce(array.length > 0, 'First for empty array');
     return array[0];
 };
-export var last = function (array) {
-    enforce(array.length > 0, 'Last for empty array');
+exports.last = function (array) {
+    exports.enforce(array.length > 0, 'Last for empty array');
     return array[array.length - 1];
 };
 // type PromiseType = PromiseType<typeof promisedOne> // => number
+exports.assertUnreachable = function (_x) { throw new Error('Didn\'t expect to get here'); };
 // ===================== MATH ===========================
-export var unscale = function (quantity, decimals) {
+exports.unscale = function (quantity, decimals) {
     if (decimals === void 0) { decimals = 18; }
     var digits = quantity.toString().length;
     var digitsToRemove = digits - 15;
