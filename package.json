@@ -1,6 +1,6 @@
 {
   "name": "@trustlessfi/utils",
-  "version": "0.2.6",
+  "version": "0.2.8",
   "description": "Utils common in Trustless typescript repositories.",
   "repository": "https://github.com/TrustlessFi/Utils",
   "author": "TrustlessOfficial <TrustlessFi@protonmail.com>",
@@ -12,5 +12,6 @@
   "types": "dist/index.d.ts",
   "devDependencies": {
     "typescript": "^4.4.3"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
