@@ -1,5 +1,6 @@
 import { BigNumber } from "ethers";
 export declare const enforce: (conditional: boolean, errorMessage: string) => void;
+export declare const zeroAddress = "0x0000000000000000000000000000000000000000";
 export declare const firstOrNull: <T>(array: T[]) => T | null;
 export declare const first: <T>(array: T[]) => T;
 export declare const last: <T>(array: T[]) => T;

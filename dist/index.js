@@ -3,6 +3,7 @@ export var enforce = function (conditional, errorMessage) {
     if (!conditional)
         throw new Error(errorMessage);
 };
+export var zeroAddress = '0x0000000000000000000000000000000000000000';
 /// ================== FIRST / LAST IN LIST ======================
 export var firstOrNull = function (array) {
     if (array.length === 0)
